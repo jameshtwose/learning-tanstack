@@ -15,8 +15,7 @@ const login = async (data: {
   params.append('client_secret', 'string');
 
   const observable$ = ajax({
-    url: 'https://wik-general-api-408585232460.europe-west4.run.app/oauth2/login',
-    // url: 'http://localhost:8080/oauth2/login',
+    url: 'http://localhost:8080/oauth2/login',
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
